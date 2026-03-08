@@ -1,0 +1,10 @@
+{
+  "Pipeline": "SmartGear Data Pipeline",
+  "Service": "AWS Glue",
+  "JobName": "smartgear-copy-job",
+  "Source": "s3://smartgear-ak-rajan-dev/raw/smartgear_sales.csv",
+  "Destination": "s3://smartgear-ak-rajan-dev/landing/smartgear_sales_<YYYY-MM-DD>.csv",
+  "Trigger": "On-Demand",
+  "Description": "Glue job copies raw dataset from raw folder to landing folder and appends current date to filename",
+  "ExecutionEvidence": "Job executed successfully and generated file smartgear_sales_2026-03-08.csv in landing folder"
+}
